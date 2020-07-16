@@ -1,28 +1,23 @@
 module.exports = {
   env: {
     es6: true,
-    browser: true
+    browser: true,
+    node: true
   },
   extends: [
     'standard',
-    'eslint:recommended',
-    'plugin:vue/recommended',
-    'plugin:vue-a11y/recommended'
+    'eslint:recommended'
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     graphql: true
   },
+  parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2018,
-    parser: 'babel-eslint'
+    ecmaVersion: 2019
   },
-  plugins: [
-    'vue',
-    'vue-a11y'
-  ],
   rules: {
     indent: ['error', 2],
     semi: ['error', 'never'],
@@ -50,10 +45,6 @@ module.exports = {
       {
         destructuring: 'all'
       }
-    ],
-    'vue/html-closing-bracket-newline': ['error', {
-      singleline: 'never',
-      multiline: 'never'
-    }]
+    ]
   }
 }

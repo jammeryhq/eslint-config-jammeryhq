@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-jammeryhq-starters",
+  "name": "eslint-config-jammeryhq-plugin",
   "version": "1.0.0",
-  "description": "ESLint config for Gridsome Starters",
+  "description": "ESLint configs for JammeryHQ Plugins",
   "author": {
     "name": "Travis Reynolds",
     "email": "travis@jammeryhq.com"
@@ -15,8 +15,6 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "eslint-plugin-vue-a11y": "^0.0.31"
+    "eslint-plugin-standard": "^4.0.1"
   }
 }

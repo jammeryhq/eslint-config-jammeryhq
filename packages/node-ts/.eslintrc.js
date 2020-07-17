@@ -1,21 +1,18 @@
 module.exports = {
+  root: true,
   env: {
     node: true
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2019,
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
-  ],
+  plugins: ['@typescript-eslint'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint', 'plugin:prettier/recommended', 'plugin:node/recommended', 'plugin:import/typescript'],
   rules: {
     indent: ['error', 2],
     semi: 'off',
-    camelcase: 'off',
     quotes: [
       2,
       'single',
@@ -24,10 +21,13 @@ module.exports = {
         allowTemplateLiterals: true
       }
     ],
-    camelcase: ['off', {
-      properties: 'never',
-      ignoreDestructuring: true
-    }],
+    camelcase: [
+      'off',
+      {
+        properties: 'never',
+        ignoreDestructuring: true
+      }
+    ],
     'comma-dangle': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed'],
     'linebreak-style': 0,
@@ -41,7 +41,7 @@ module.exports = {
         destructuring: 'all'
       }
     ],
-    '@typescript-eslint/semi': ['error', 'never']
+    '@typescript-eslint/semi': ['error', 'never'],
     'prettier/prettier': 'error'
   }
 }

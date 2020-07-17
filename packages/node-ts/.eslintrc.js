@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint'],
-  extends: ['standard-with-typescript', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
+  extends: ['standard-with-typescript', 'eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   rules: {
     indent: ['error', 2],
     semi: 'off',
@@ -41,7 +41,6 @@ module.exports = {
         destructuring: 'all'
       }
     ],
-    '@typescript-eslint/semi': ['error', 'never'],
-    'prettier/prettier': 'error'
+    '@typescript-eslint/semi': ['error', 'never']
   }
 }

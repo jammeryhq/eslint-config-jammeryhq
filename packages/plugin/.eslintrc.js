@@ -20,31 +20,18 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2],
-    semi: ['error', 'never'],
-    quotes: [
-      2,
-      'single',
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: true
-      }
-    ],
-    camelcase: ['off', {
-      properties: 'never',
-      ignoreDestructuring: true
-    }],
-    'comma-dangle': ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed'],
-    'linebreak-style': 0,
-    'object-curly-spacing': ['error', 'always'],
-    'computed-property-spacing': ['error', 'always'],
-    'space-in-parens': ['error', 'never'],
+    semi: 'off',
+    quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
+    camelcase: ['off', { properties: 'never', ignoreDestructuring: true }],
     'array-bracket-spacing': ['error', 'never'],
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'all'
-      }
-    ]
+    'arrow-parens': ['error', 'as-needed'],
+    'comma-dangle': ['error', 'never'],
+    'computed-property-spacing': ['error', 'always'],
+    'linebreak-style': 0,
+    'max-len': ['error', { code: 180 }],
+    'object-curly-spacing': ['error', 'always'],
+    'prefer-arrow-callback': 'error',
+    'prefer-const': ['error', { destructuring: 'all' }],
+    'space-in-parens': ['error', 'never']
   }
 }

@@ -28,7 +28,7 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'computed-property-spacing': ['error', 'always'],
     'linebreak-style': 0,
-    'max-len': ['error', { code: 180 }],
+    'max-len': ['warn', { code: 200 }],
     'object-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': ['error', { destructuring: 'all' }],

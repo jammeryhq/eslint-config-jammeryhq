@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jammeryhq-starters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint config for Gridsome Starters",
   "author": {
     "name": "Travis Reynolds",

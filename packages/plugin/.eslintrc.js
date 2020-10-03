@@ -20,7 +20,7 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2],
-    semi: 'off',
+    semi: ['error', 'never'],
     quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     camelcase: ['off', { properties: 'never', ignoreDestructuring: true }],
     'array-bracket-spacing': ['error', 'never'],
